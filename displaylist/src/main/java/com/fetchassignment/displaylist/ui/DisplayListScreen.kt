@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -123,13 +124,13 @@ fun ListView(item: Info, modifier: Modifier = Modifier) {
 fun SectionHeadingView(item: SectionHeadingInfo, modifier: Modifier = Modifier) {
     Box(
         modifier = modifier
-            .padding(24.dp)
             .fillMaxWidth()
+            .height(64.dp)
             .background(MaterialTheme.colorScheme.secondary)
     ) {
         Text(
             text = "This is section ${item.section}",
-            modifier.padding(4.dp),
+            modifier.padding(16.dp),
             color = MaterialTheme.colorScheme.onSecondary
         )
     }

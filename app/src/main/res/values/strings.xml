@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FetchAssignmentApplication</string>
+    <string name="fetch_assignment">Fetch Assignment</string>
+</resources>
